@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - 1401:1433
+      
+  api:
+    build: ./Banco.Backend
+    ports:
+      - 5002:80
+    links:
+      - db
+    depends_on:
+      - db
+
+  # web:
+  #   build: ./projectmanager.frontend
+  #   volumes:
+  #     - ./docker/nginx/:/etc/nginx/conf.d
+  #   ports:
+  #     - 7070:80
+  #   depends_on:
+  #     - api

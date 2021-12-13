@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Banco.Commons\Banco.Commons.csproj" />
+    <ProjectReference Include="..\Banco.Commons\Banco.Commons.csproj" />
+  </ItemGroup>
+
+</Project>
