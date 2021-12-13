@@ -1,11 +1,11 @@
 # Banco
-
+WebApi do projeto banco.
 ### Tecnologias Utilizadas
 
 - .NET 5
+- EntityFrameworkCore
 - SqlServer
 - Docker
-
 ### Executar Projeto
 
 Para executar todo projeto foi criado um docker-compose, digite o seguinte comando na raiz do repositório:
@@ -14,7 +14,7 @@ Para executar todo projeto foi criado um docker-compose, digite o seguinte coman
 $ docker-compose up
 ```
 
-Este comando irá compilar e executar o Projeto via docker.
+Este comando irá compilar e executar o Projeto via docker. Ao inicializar o serviço da api automaticamente será criado as tabelas a partir das migrations do ef core.
 
 ### Conceitos
 * Notification Pattern
@@ -23,7 +23,6 @@ Este comando irá compilar e executar o Projeto via docker.
 * Repository Pattern
 * Solid
 
-### Uso
-Utilizar a rota de criação de pessoa para criar uma nova pessoa, está rota é para autocriação de pessoas, a partir disso é retornado um token para adicionar nas requisições para rotas privadas.
 
+### Uso api
 Para Acessar a documentação swagger da API basta acessar o seguinte endereço `SEU_IP:5000/swagger`. Ou a documentação insomnia com o seguinte endereço `SEU_IP:3000`
