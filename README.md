@@ -25,4 +25,9 @@ Este comando irá compilar e executar o Projeto via docker. Ao inicializar o ser
 
 
 ### Uso api
-Para Acessar a documentação swagger da API basta acessar o seguinte endereço `SEU_IP:5000/swagger`. Ou a documentação insomnia com o seguinte endereço `SEU_IP:3000`
+Para Acessar a documentação swagger da API basta acessar o seguinte endereço `SEU_IP:5000/swagger`:
+ ![Swagger](https://github.com/LeoNog96/Desafio-Banco/blob/master/img/Swagger.PNG)
+
+
+Ou a documentação insomnia com o seguinte endereço `SEU_IP:3000`:
+ ![Insomniadoc](https://github.com/LeoNog96/Desafio-Banco/blob/master/img/Insomniadoc.PNG)
