@@ -12,17 +12,14 @@ services:
   api:
     build: ./Banco.Backend
     ports:
-      - 5002:80
+      - 5000:80
     links:
       - db
     depends_on:
       - db
-
-  # web:
-  #   build: ./projectmanager.frontend
-  #   volumes:
-  #     - ./docker/nginx/:/etc/nginx/conf.d
-  #   ports:
-  #     - 7070:80
-  #   depends_on:
-  #     - api
+  docs:
+    build: ./api-documentacao
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
